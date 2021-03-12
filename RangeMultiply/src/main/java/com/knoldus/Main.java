@@ -4,14 +4,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        RangeMultiply instance = new RangeMultiply();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter First Number : ");
-         int FirstRange = (int) scanner.nextLong();
+         String FirstRange = scanner.nextLine();
         System.out.println("Enter Second Number : ");
-         int secondNumber = (int) scanner.nextLong();
+         String secondNumber = scanner.nextLine();
 
-       System.out.println(instance.calculate(FirstRange,  secondNumber));
+       System.out.println(RangeMultiply.calculate(FirstRange,  secondNumber));
     }
 }
 
